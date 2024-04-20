@@ -52,6 +52,8 @@ export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib/native"
 ```
 Para que se vea así:
 
+![imgtest](https://raw.githubusercontent.com/aefimovru/aprender_r/050f1b4ddab3d021fecc1cdf9b33bee745c5c222/img/2024-04-20_16-30-50.png)
+
 Para salir de nano pulsar CTRL+X, el programa nos preguntará si queremos guardar el archivo y con qué nombre. Pulsar Y y ENTER.
 
 Para que los cambios surtan efecto hay que ejecutar este comando
@@ -67,6 +69,8 @@ Añade esta línea o busca una línea existente y cámbiala
 `JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64`
 
 Para que se vea así 
+
+![imgtest](https://raw.githubusercontent.com/aefimovru/aprender_r/050f1b4ddab3d021fecc1cdf9b33bee745c5c222/img/2024-04-20_16-31-05.png)
 
 Voy a la carpeta de trabajo del programa
 
@@ -90,6 +94,8 @@ Este es el bloque que debe insertar en la sección "configuración"
 ```
 
 Para que se vea así: 
+
+![imgtest](https://raw.githubusercontent.com/aefimovru/aprender_r/050f1b4ddab3d021fecc1cdf9b33bee745c5c222/img/2024-04-20_16-31-18.png)
 
 Haz lo mismo con este archivo:
 
@@ -143,12 +149,16 @@ Y el último
 Ahora podemos utilizar el comando HDFS. Vamos a formatear el espacio de nombres con este comando
 
 `hdfs namenode -format`
- 
+
+![imgtest](https://raw.githubusercontent.com/aefimovru/aprender_r/050f1b4ddab3d021fecc1cdf9b33bee745c5c222/img/2024-04-20_16-31-32.png)
+
 Ahora necesitamos poner en orden los derechos para ejecutar el programa. Crea una clave con este comando
 
 `ssh-keygen -t rsa`
 
 Las preguntas no tienen respuesta, basta con pulsar ENTER en cada pregunta 
+
+![imgtest](https://raw.githubusercontent.com/aefimovru/aprender_r/050f1b4ddab3d021fecc1cdf9b33bee745c5c222/img/2024-04-20_16-31-43.png)
 
 Coloque la clave obtenida en la carpeta de claves permitidas
 
@@ -160,22 +170,29 @@ Intentando ejecutar Hadoop
 `start-all.sh`
 
 Así debería ser un lanzamiento
- 
+
+![imgtest](https://raw.githubusercontent.com/aefimovru/aprender_r/050f1b4ddab3d021fecc1cdf9b33bee745c5c222/img/2024-04-20_16-31-55.png)
+
 Para comprobar si todo se ha iniciado correctamente, ejecute este comando
 
 `jps`
 
 Eso es lo que debemos conseguir
+
+![imgtest](https://raw.githubusercontent.com/aefimovru/aprender_r/050f1b4ddab3d021fecc1cdf9b33bee745c5c222/img/2024-04-20_16-32-05.png)
  
 Ahora conéctate al servidor desde el navegador de nuestro ordenador. No olvides cambiar la dirección IP por la tuya. Deberían abrirse 2 sitios
 
-http://192.168.1.216:9870/ 
+http://192.168.1.216:9870/
+
+![imgtest](https://raw.githubusercontent.com/aefimovru/aprender_r/050f1b4ddab3d021fecc1cdf9b33bee745c5c222/img/2024-04-20_16-32-45.png)
 
 Y éste
 
 http://192.168.1.216:8088/
 
- 
+![imgtest](https://raw.githubusercontent.com/aefimovru/aprender_r/050f1b4ddab3d021fecc1cdf9b33bee745c5c222/img/2024-04-20_16-32-56.png)
+
 Si todo va bien, detenga el programa e instálelo como servicio.
 
 `stop-all.sh`
@@ -219,6 +236,8 @@ Iniciar y activar la ejecución automática
 
 Si ves esto, ya has terminado y puedes pasar a instalar Spark 
 
+![imgtest](https://raw.githubusercontent.com/aefimovru/aprender_r/050f1b4ddab3d021fecc1cdf9b33bee745c5c222/img/2024-04-20_16-33-12.png)
+
 ### Instalación de Spark además de Hadoop
 
 Volver a la carpeta de usuario
@@ -249,6 +268,8 @@ export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin
 ```
 
 Para que se vea así: 
+
+![imgtest](https://raw.githubusercontent.com/aefimovru/aprender_r/050f1b4ddab3d021fecc1cdf9b33bee745c5c222/img/2024-04-20_16-33-25.png)
 
 Aplicación de los cambios
 
@@ -303,9 +324,13 @@ Activar todos estos servicios
 `sudo systemctl enable spark-slave`
 
 Eso es lo que se supone que es:
- 
+
+![imgtest](https://raw.githubusercontent.com/aefimovru/aprender_r/050f1b4ddab3d021fecc1cdf9b33bee745c5c222/img/2024-04-20_16-33-36.png)
+
 Compruébelo accediendo al sitio web de Spark. Introduzca la dirección de su servidor Debe tener este aspecto:
 
 http://192.168.1.216:8080/
+
+![imgtest](https://raw.githubusercontent.com/aefimovru/aprender_r/050f1b4ddab3d021fecc1cdf9b33bee745c5c222/img/2024-04-20_16-33-48.png)
 
 Listo!
