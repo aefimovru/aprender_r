@@ -1,26 +1,43 @@
-Instalación de Hadoop y Spark en Ubuntu 22.04
+﻿Instalación de Hadoop y Spark en Ubuntu 22.04
 
 
 Este comando actualiza la lista de aplicaciones disponibles para descargar
 
-sudo apt update
+`sudo apt update`
 
 sudo significa que el programa debe ejecutarse como administrador. Y Ubuntu pedirá la contraseña. Durante un tiempo Ubuntu no pedirá la contraseña
+
 Instalación de Java
-sudo apt-get install default-jdk curl ssh -y
+
+`sudo apt-get install default-jdk curl ssh -y`
+
 Comprobación de la versión de Java
-java -version
+
+`java -version`
+
 ![imgtest](https://raw.githubusercontent.com/aefimovru/aprender_r/050f1b4ddab3d021fecc1cdf9b33bee745c5c222/img/2024-04-20_16-30-27.png)
+
 La versión 11 está instalada
+
 Descargue la versión actual de Hadoop del sitio web de Apache
-wget https://dlcdn.apache.org/hadoop/common/hadoop-3.4.0/hadoop-3.4.0.tar.gz
+
+`wget https://dlcdn.apache.org/hadoop/common/hadoop-3.4.0/hadoop-3.4.0.tar.gz`
+
 Desembalaré el archivo
-tar -xvzf hadoop-3.4.0.tar.gz
+
+`tar -xvzf hadoop-3.4.0.tar.gz`
+
 Mover la carpeta al espacio de trabajo
-sudo mv hadoop-3.4.0/ /opt/hadoop
+
+`sudo mv hadoop-3.4.0/ /opt/hadoop`
+
 A continuación, debe añadir parámetros a las variables del sistema. Nano es un análogo del Bloc de notas en Windows.
-nano ~/.bashrc
+
+`nano ~/.bashrc`
+
 Y añade el siguiente texto al final del archivo
+
+```
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 export HADOOP_HOME=/opt/hadoop
 export HADOOP_INSTALL=$HADOOP_HOME
@@ -31,7 +48,9 @@ export HADOOP_YARN_HOME=$HADOOP_HOME
 export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
 export PATH=$PATH:$HADOOP_HOME/sbin:$HADOOP_HOME/bin
 export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib/native"
-Para que se vea así: 
+
+```
+Para que se vea así:
 Para salir de nano pulsar CTRL+X, el programa nos preguntará si queremos guardar el archivo y con qué nombre. Pulsar Y y ENTER.
 Para que los cambios surtan efecto hay que ejecutar este comando
 source ~/.bashrc
