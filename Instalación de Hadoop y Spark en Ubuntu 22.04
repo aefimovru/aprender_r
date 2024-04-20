@@ -10,7 +10,7 @@ Instalación de Java
 sudo apt-get install default-jdk curl ssh -y
 Comprobación de la versión de Java
 java -version
-![Image alt](https://github.com/aefimovru/aprender_r/blob/f2c321477b53e19cbac950c8ee7e39c5ac56c803/img/2024-04-20_16-30-27.png)
+![img](https://github.com/aefimovru/aprender_r/commit/050f1b4ddab3d021fecc1cdf9b33bee745c5c222/2024-04-20_16-30-27.png)
 La versión 11 está instalada
 Descargue la versión actual de Hadoop del sitio web de Apache
 wget https://dlcdn.apache.org/hadoop/common/hadoop-3.4.0/hadoop-3.4.0.tar.gz
