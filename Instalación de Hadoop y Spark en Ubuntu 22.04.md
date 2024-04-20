@@ -201,7 +201,7 @@ Crear un archivo de servicio
 
 `sudo nano /etc/systemd/system/hadoop.service`
 
-El contenido del archivo debe ser el siguiente. ¡¡¡¡==NOTA==!!!! Cambie los campos resaltados por su nombre de usuario
+El contenido del archivo debe ser el siguiente. ¡¡¡¡NOTA!!!! Cambie los campos resaltados por su nombre de usuario
 
 ```
 [Unit]
@@ -279,7 +279,7 @@ Creación de un servicio para Spark
 
 `sudo nano /etc/systemd/system/spark-master.service`
 
-Ponga la siguiente información en el archivo. ¡¡¡¡==NOTA==!!!! No olvides cambiar el nombre de usuario
+Ponga la siguiente información en el archivo. ¡¡¡¡NOTA!!!! No olvides cambiar el nombre de usuario
 
 ```
 [Unit]
@@ -296,7 +296,7 @@ WantedBy=multi-user.target
 Crear otro servicio
 sudo nano /etc/systemd/system/spark-slave.service
 ```
-Aquí está el contenido del archivo. ¡¡¡==ATENCIÓN==!!! Además del nombre de usuario, también debe cambiar la dirección IP
+Aquí está el contenido del archivo. ¡¡¡ATENCIÓN!!! Además del nombre de usuario, también debe cambiar la dirección IP
 ```
 [Unit]
 Description=Apache Spark Slave
