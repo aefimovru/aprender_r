@@ -1,4 +1,4 @@
-﻿### Instalación de Hadoop y Spark en Ubuntu 22.04
+﻿# Instalación de Hadoop y Spark en Ubuntu 22.04
 
 
 Este comando actualiza la lista de aplicaciones disponibles para descargar
@@ -238,7 +238,7 @@ Si ves esto, ya has terminado y puedes pasar a instalar Spark
 
 ![imgtest](https://raw.githubusercontent.com/aefimovru/aprender_r/050f1b4ddab3d021fecc1cdf9b33bee745c5c222/img/2024-04-20_16-33-12.png)
 
-### Instalación de Spark además de Hadoop
+# Instalación de Spark además de Hadoop
 
 Volver a la carpeta de usuario
 
