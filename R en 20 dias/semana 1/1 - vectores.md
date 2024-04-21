@@ -42,7 +42,7 @@ Comandos que se utilizarán para resolver problemas con vectores
 
 **cuantil**() - Calcula los cuantiles de un vector numérico.
 
-[documentacion quantile](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/quantile)
+[Descripción quantile](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/quantile)
 
 [Wiki cuantil](https://es.wikipedia.org/wiki/Cuantil)
 
@@ -51,9 +51,11 @@ Comandos que se utilizarán para resolver problemas con vectores
 
 **tolower**(), **toupper**() - Convierten cadenas de texto a minúsculas o mayúsculas respectivamente.
 
-`tolower('ABC')
-toupper('abc')`
+```
+tolower('ABC')
+toupper('abc')
 
+```
 
 **substring**() - Extrae la subcadena de una cadena
 
