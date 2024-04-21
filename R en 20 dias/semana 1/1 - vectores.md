@@ -1,4 +1,4 @@
-# Vectores
+﻿# Vectores
 
 Comandos que se utilizarán para resolver problemas con vectores
 
@@ -6,74 +6,110 @@ Comandos que se utilizarán para resolver problemas con vectores
 
 `print("Hello World")`
 
+
 **c**() - Combina valores en un vector. Se utiliza para crear vectores o combinarlos.
 
 `numeros <- c(1, 2, 3, 4, 5)`
 
+
 **seq**() - Genera una secuencia de números. Puede especificar el inicio, el final y el paso.
+
+[Descripción seq](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/seq)
 
 `seq(1, 10, by = 1)`
 
+
 **mean**() - Calcula la media aritmética de los elementos del vector.
+
+[Descripción mean](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/mean)
 
 `mean(c(1, 2, 3, 4, 5))`
 
+
 **grep**() - Busca un patrón en cadenas de texto. Devuelve índices de cadenas que contienen el patrón buscado.
+
+[Descripción grep](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/grep)
 
 `grep("pattern", c("pattern1", "pattern2"))`
 
+
 **ifelse**() - Construcción típica if else
+
+[Descripción ifelse](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/ifelse)
 
 `ifelse(1:10 > 5, "greater", "not greater")`
 
+
 **cuantil**() - Calcula los cuantiles de un vector numérico.
 
+[documentacion quantile](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/quantile)
+
+[Wiki cuantil](https://es.wikipedia.org/wiki/Cuantil)
+
 `quantile(c(1, 2, 3, 4, 5), probs = 0.5)`
+
 
 **tolower**(), **toupper**() - Convierten cadenas de texto a minúsculas o mayúsculas respectivamente.
 
 `tolower('ABC')
 toupper('abc')`
 
+
 **substring**() - Extrae la subcadena de una cadena
 
 `substring("Hello World", 1, 5)`
+
 
 **as.Date**() - Convierte una cadena o un número a formato de fecha.
 
 `as.Date("2023-01-01")`
 
+
 **factor**() - Crea un factor a partir de un vector.
 
+[Descripción factor](https://soka.gitlab.io/blog/post/2019-08-15-r-factores/)
+
 `factor(c("low", "medium", "high"))`
+
 
 **as.numeric**() - Convierte un factor o cadena a formato numérico.
 
 `as.numeric(factor(c("1", "2", "3")))`
 
+
 **rnorm**() - Genera números aleatorios distribuidos normalmente.
+
+[Descripción rnorm, norm, etc...](https://rpubs.com/JoseBarrera/normal)
 
 `rnorm(100, mean = 0, sd = 1)`
 
-**d**() - Calcula la desviación estándar de los elementos del vector.
+
+**sd**() - Calcula la desviación estándar de los elementos del vector.
+
+[Descripción d](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/sd)
 
 `sd(c(1, 2, 3, 4, 5))`
+
 
 **table**() - Construye la tabla de frecuencias de los elementos del vector.
 
 `table(c("yes", "no", "yes"))`
 
+
 **unique**() - Devuelve un vector que contiene sólo elementos únicos del vector original.
 
 `unique(c(1, 2, 2, 3, 4))`
+
 
 **sample**() - Selecciona elementos aleatorios del vector.
 
 `sample(1:100, 10)`
 
+
 **sort**() - Ordena los elementos del vector.
 
 `sort(c(3, 1, 2))`
+
 
 **runif**() - Genera números aleatorios distribuidos uniformemente.
 
