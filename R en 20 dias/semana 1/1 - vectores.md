@@ -2,14 +2,17 @@
 
 Comandos que se utilizarán para resolver problemas con vectores
 
+
 **print**() - Imprime el valor de una variable o el resultado de una expresión en la consola. Se utiliza para mostrar los resultados.
 
 `print("Hello World")`
 
 
+
 **c**() - Combina valores en un vector. Se utiliza para crear vectores o combinarlos.
 
 `numeros <- c(1, 2, 3, 4, 5)`
+
 
 
 **seq**() - Genera una secuencia de números. Puede especificar el inicio, el final y el paso.
@@ -19,11 +22,13 @@ Comandos que se utilizarán para resolver problemas con vectores
 `seq(1, 10, by = 1)`
 
 
+
 **mean**() - Calcula la media aritmética de los elementos del vector.
 
 [Descripción mean](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/mean)
 
 `mean(c(1, 2, 3, 4, 5))`
+
 
 
 **grep**() - Busca un patrón en cadenas de texto. Devuelve índices de cadenas que contienen el patrón buscado.
@@ -33,11 +38,13 @@ Comandos que se utilizarán para resolver problemas con vectores
 `grep("pattern", c("pattern1", "pattern2"))`
 
 
+
 **ifelse**() - Construcción típica if else
 
 [Descripción ifelse](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/ifelse)
 
 `ifelse(1:10 > 5, "greater", "not greater")`
+
 
 
 **cuantil**() - Calcula los cuantiles de un vector numérico.
@@ -49,6 +56,7 @@ Comandos que se utilizarán para resolver problemas con vectores
 `quantile(c(1, 2, 3, 4, 5), probs = 0.5)`
 
 
+
 **tolower**(), **toupper**() - Convierten cadenas de texto a minúsculas o mayúsculas respectivamente.
 
 ```
@@ -57,14 +65,17 @@ toupper('abc')
 
 ```
 
+
 **substring**() - Extrae la subcadena de una cadena
 
 `substring("Hello World", 1, 5)`
 
 
+
 **as.Date**() - Convierte una cadena o un número a formato de fecha.
 
 `as.Date("2023-01-01")`
+
 
 
 **factor**() - Crea un factor a partir de un vector.
@@ -74,9 +85,11 @@ toupper('abc')
 `factor(c("low", "medium", "high"))`
 
 
+
 **as.numeric**() - Convierte un factor o cadena a formato numérico.
 
 `as.numeric(factor(c("1", "2", "3")))`
+
 
 
 **rnorm**() - Genera números aleatorios distribuidos normalmente.
@@ -86,6 +99,7 @@ toupper('abc')
 `rnorm(100, mean = 0, sd = 1)`
 
 
+
 **sd**() - Calcula la desviación estándar de los elementos del vector.
 
 [Descripción d](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/sd)
@@ -93,9 +107,11 @@ toupper('abc')
 `sd(c(1, 2, 3, 4, 5))`
 
 
+
 **table**() - Construye la tabla de frecuencias de los elementos del vector.
 
 `table(c("yes", "no", "yes"))`
+
 
 
 **unique**() - Devuelve un vector que contiene sólo elementos únicos del vector original.
@@ -103,14 +119,17 @@ toupper('abc')
 `unique(c(1, 2, 2, 3, 4))`
 
 
+
 **sample**() - Selecciona elementos aleatorios del vector.
 
 `sample(1:100, 10)`
 
 
+
 **sort**() - Ordena los elementos del vector.
 
 `sort(c(3, 1, 2))`
+
 
 
 **runif**() - Genera números aleatorios distribuidos uniformemente.
@@ -119,6 +138,7 @@ toupper('abc')
 
 
 ### Tareas:
+
 
 1. Crear un vector que contenga números del 1 al 20 y visualizarlo en la pantalla.
 
