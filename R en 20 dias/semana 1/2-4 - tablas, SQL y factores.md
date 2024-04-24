@@ -34,7 +34,7 @@
 30. Configurar el guardado automático de informes en el almacenamiento en la nube (por ejemplo, Google Drive o AWS S3).
 31. Importe la matriz, conviértala en un marco de datos y guárdela en un archivo CSV. La matriz debe contener datos numéricos y simbólicos.
 32. Cree un factor con más de 100 niveles y, a continuación, reduzca mediante programación el número de niveles en función de la frecuencia de aparición.
-33. Crear una tabla tridimensional (matriz) basada en datos de trama que contenga variables numéricas y categóricas, y realizar diversas operaciones de agregación.
+33. Crear una tabla tridimensional (matriz) basada en datos de frame que contenga variables numéricas y categóricas, y realizar diversas operaciones de agregación.
 34. Escribir una función que tome un marco de datos y una lista de variables, y devuelva un marco de datos que contenga sólo aquellas variables que satisfagan las condiciones de distribución dadas.
 35. Visualizar las relaciones entre las categorías de un factor mediante un gráfico de matriz de red.
 36. Aplicar condiciones de filtrado complejas a un marco de datos y crear nuevas variables basadas en las condiciones y funciones complejas de otras variables.
