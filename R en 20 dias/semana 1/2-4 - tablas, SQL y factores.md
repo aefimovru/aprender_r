@@ -87,8 +87,6 @@ factor() - creación de variables factoriales.
 
 xtabs() - creación de tablas de contigüidad.
 
-summary() - obtener un resumen detallado del modelo o de los datos.
-
 plot() - función básica para crear gráficos en R.
 
 median() - cálculo de la mediana.
@@ -119,8 +117,6 @@ group_by() - agrupación de datos por una o más variables.
 summarise() o resumir() - agregación de datos después de la agrupación.
 
 full_join() - fusión completa de dos marcos de datos.
-
-select() - seleccionar columnas específicas de un marco de datos.
 
 
 ### Libreria ggplot
